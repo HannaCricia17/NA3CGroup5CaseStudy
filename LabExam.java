@@ -39,11 +39,21 @@ public class LabExam {
        
        //Hanna Cricia Manuel
         if (choice == 3) {
-          
+          System.out.println("3. Calculate Diameter of a Circle");
+           System.out.print("Enter radius of circle: ");
+           int r = sc.nextInt();
+           diameterCircle(r);
        }
         
         if (choice == 4) {
-           
+           System.out.println("4. Check number if its a Perfect Square");
+           System.out.print("Enter any number:");
+           double num = sc.nextDouble(); 
+           checkPerfectSquare(num);
+           if (checkPerfectSquare(num)) 
+		System.out.print(num+ " is a perfect square number"); 
+	   else
+		System.out.print(num+ " is not a perfect square number"); 
        }
         
         
@@ -106,11 +116,13 @@ public class LabExam {
     
     //3 Manuel
     public static void circumferenceCircle (int num) {
-           
+         double circum = 3.14 * 2 * num;
+	   System.out.println("Circuference of circle is:" + circum);  
     }
     //4 Manuel
     public static void diameterCircle (int num) {
-           
+           double diameter = 2 * num;
+	   System.out.println("Diameter of circle is:" + diameter);
     }
     
     

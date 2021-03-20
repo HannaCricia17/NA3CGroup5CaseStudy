@@ -197,11 +197,21 @@ public class LabExam {
         
         //11 Buan
           public static void age(int num)  { 
-	
+	if (num < 18) {
+            System.out.print("Access Denied! - Your not old enough");
+        }  else {
+            System.out.print("Access Permitted!");
+        }  
     } 
           //12 Buan
          public static void positiveNegative(int num)  { 
-	
+	if(num> 0)
+        {
+            System.out.println(num+" is a positive number");
+        }
+        else 
+            System.out.println(num+" is a negative number");
+        }   
          }
 
          

@@ -100,11 +100,19 @@ public class LabExam {
           
           //Jonas Dela Cruz
           if (choice == 9) {
-           
+           System.out.println("9. Calculate Area of Triangle");
+           System.out.println("Enter the width of the Triangle:");
+           double base = sc.nextDouble();
+           System.out.println("Enter the height of the Triangle:");
+           double height = sc.nextDouble();
+           areaTriangle(base, height);
          }
            
           if (choice == 10) {
-           
+            System.out.println("10. Check age by birth year");
+           System.out.println("Enter your birth year");
+           int year = sc.nextInt();
+           byear(year);
          }
           
           
@@ -186,11 +194,14 @@ public class LabExam {
        //9 Dela Cruz
        public static void areaTriangle(double x, double y)  
     { 
+	       double area = (x * y) / 2;
+        System.out.println("Area of Triangle is: " + area);
 	
     } 
        //10 Dela Cruz
         public static void byear(int num)  { 
-	
+	int year = 2021 - num;  
+        System.out.println("You are or will be :" + year + "years old this year.");  
     } 
         
         

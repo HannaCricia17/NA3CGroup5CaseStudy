@@ -111,11 +111,17 @@ public class LabExam {
           
           //Jeremiah Buan
           if (choice == 11) {
-           
+           System.out.println("11. Check if a person is underage or not");
+           System.out.println("Enter your Age: ");
+           int age = sc.nextInt();
+           age(age);
            }
        
          if (choice == 12) {
-           
+           System.out.println("12. Check if number is negative or positive");
+           System.out.print("Enter a number: ");
+           int num = sc.nextInt();
+           positiveNegative(num);
        }
     }
     

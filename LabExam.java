@@ -83,11 +83,17 @@ public class LabExam {
         
         //Thaniel Ibay
          if (choice == 7) {
-             
+	System.out.println("7. Check if number is Odd number");
+             System.out.println("Enter Number: ");
+             int num = sc.nextInt();
+             odd(num);                  
          }
          
           if (choice == 8) {
-           
+           System.out.println("7. Check if number is Even number");
+             System.out.println("Enter Number: ");
+             int num = sc.nextInt();
+             even(num);
           }
           
           
@@ -158,12 +164,16 @@ public class LabExam {
     //7 Ibay
         public static void odd(int x)  
     { 
-	
+		if (x % 2 != 0 ) {
+            System.out.println(x + "is an odd number");
     }
+}
      //8 Ibay
        public static void even(int x)  
     { 
-	
+	if (x % 2 == 0 ) {
+            System.out.println(x + "is an even number");
+        }	
     } 
        
        

@@ -66,11 +66,18 @@ public class LabExam {
 
        //Jerry Soriano
        if (choice == 5) {
-           
+           System.out.println("5. Calculate Area of Rectangle");
+           System.out.print("Enter the length of Rectangle: ");
+	   double length = sc.nextDouble();
+	   System.out.print("Enter the width of Rectangle: ");
+	   double width = sc.nextDouble();
+	   areaRectangle(length, width);
         }
        
         if (choice == 6) {
-            
+            System.out.println("6. Calculate Area of Square");
+            System.out.println("Enter Side of Square:");
+            double side = sc.nextDouble();
        }
         
         
@@ -137,12 +144,14 @@ public class LabExam {
     //5 Soriano
     public static boolean checkPerfectSquare(double x)  
     { 
-	return true;
+	double sq = Math.sqrt(x); 
+	return ((sq - Math.floor(sq)) == 0); 
     } 
     //6 Soriano
     public static void areaSquare(double x)  
     { 
-	
+	double area = x * x;
+	System.out.println("Area of Square is: "+ area);
     } 
     
     

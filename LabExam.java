@@ -29,11 +29,17 @@ public class LabExam {
        
        //Charmaine Cargullo
        if (choice == 1) {
-           
+           System.out.println("1. Calculate Area of a Circle");
+           System.out.print("Enter radius of circle: ");
+           int c = sc.nextInt();
+           areaCircle(c);
        }
        
        if (choice == 2) {
-           
+           System.out.println("2. Calculate Circumference of a Circle");
+           System.out.print("Enter radius of circle: ");
+           int r = sc.nextInt();
+           circumferenceCircle(r);
        }
        
        
@@ -106,11 +112,13 @@ public class LabExam {
     
     //1 Cargullo
     public static void areaCircle (int num) {
-           
+           double circle = 3.14 * num * num;
+	   System.out.println("Area of Circle is:"+ circle);
     }
     //2 Cargullo
     public static void areaRectangle (double a, double b) {
-           
+           double area = a*b;
+	   System.out.println("Area of Rectangle is:"+ area);
     }
     
     
